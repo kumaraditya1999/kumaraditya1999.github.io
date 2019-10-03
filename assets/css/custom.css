@@ -64,8 +64,10 @@ section{font-size:120%;width:90%;margin:0 auto;max-width:1000px}@media only scre
 }
 
 .sub-project{
-    width: 40%;
-    margin: 3%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
     display: inline-block;
 }
 
@@ -109,7 +111,7 @@ section{font-size:120%;width:90%;margin:0 auto;max-width:1000px}@media only scre
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 17px;
+    font-size: 1.2vw;
     padding: 10px;
     background: rgba(0, 0, 0, 0.6);
     -webkit-transform: translateY(45px);
@@ -129,7 +131,7 @@ section{font-size:120%;width:90%;margin:0 auto;max-width:1000px}@media only scre
     display: inline-block;
     text-decoration: none;
     padding: 7px 14px;
-    font-size: 14px;
+    font-size: 1vw;
     color: #fff;
     border: 1px solid #fff;
     background-color: transparent;
