@@ -1,207 +1,177 @@
-<html>
-<head>
-    <title>Aditya Kumar</title>  
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="animate.css">
-    <script language="javascript" type="text/javascript" src="p5/p5.js"></script>
-    <script language="javascript" src="p5/addons/p5.dom.js"></script>
-    <style>
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway');
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Aditya Kumar</title>
+        <meta name="description" content="Portfolio">
+        
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="shortcut icon" type="image/png" href="./assets/images/favicon/favicon-32x32.png" >
+        <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="./assets/css/custom.css">
+    </head>
+      
+  <body>
 
-* { margin: 0; padding: 0; }
-html {
-    height: 100%;
-}
-body {
-    font-size: 16px;
-    color: gray;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-image: url("img.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    <!-- header section  -->
 
-}
-
-#block-container {
-    top: 50vh;
-    transform: translateY(-50%);
-    display: block;
-    margin: 0 auto;
-    width: 400px;
-    position: relative;
-    background-color: #f4f4f4;
-    border-radius: 7px;
-    padding:  5px 20px;
-    opacity: 0.92;
-    -webkit-animation-duration: 2 s;
-            animation-duration: 2 s;
-    -webkit-box-shadow: 18px 11px 135px -25px black;
-            box-shadow: 18px 11px 135px -25px black;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-    -webkit-transition: 0.5s;
-            transition: 0.5s;
-    -webkit-perspective: 1500px;
-            perspective: 1500px;
-    z-index: 100;
-}
-
-#main {
-    z-index: 100;
-}
-
-@media screen and (max-width: 500px) {
-    #block-container {
-        width: 80%;
-    }
-}
-
-#profile-image {
-    display: inline-block;
-    margin-top: 20px;
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    transition: all 0.3s ease-in-out;
-}
-
-@media screen and (max-width: 500px) {
-    #profile-image {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-#profile-image:hover {
-    filter: none;
-    transform: scale(1.15);
-}
-
-
-#text-container {
-    font-family: 'Raleway', sans-serif;
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 0;
-}
-
-.link {
-    text-decoration: none;
-    font-size: 16px;
-    color: gray;
-}
-
-footer {
-    opacity: 0.2;
-    font-family: 'Raleway', sans-serif;
-    transition: all 0.5s ease-in-out;
-    margin: 5px auto;
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    color: white;
-    z-index: 100;
-}
-
-@media screen and (max-width: 500px) {
-    footer {
-        display: none;
-    }
-}
-
-footer:hover {
-    opacity: 0.9;
-}
-
-.footer-text {
-    font-size: 24px;
-}
-
-.footer-text a {
-    text-decoration: none;
-    color: white;
-}
-
-.small-link {
-    font-size: 16px;
-}
-
-.highlight {
-    color: #8b2f5f;
-}
-
-canvas {
-    margin : 0 auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-}
-
-h1 {
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-@media screen and (max-width: 500px) {
-    h1 {
-        font-size: 28px;
-    }
-}
-</style>
-</head>
-<body>
-    <script type="text/javascript" src="script.js"></script>
-    <div id="block-container" class="animated fadeIn">
-        <div id="main" class="face front">
-            <img src="aditya.jpg" id="profile-image">
-            <div id="text-container">
-                <h1 class="name-tag">ADITYA KUMAR</h1> 
-                <br><hr><br>
-                My name is Aditya. I'm a programmer with an interest in Competitive coding and Web Development. <br><br>
-                I am currently in my third year at <a class="link small-link highlight" href="http://nitt.edu">NIT Trichy</a>, one of India's top universities.<br><br>
-
-                Check out my <a class="link small-link highlight" href="resume.pdf">Resumé </a>for my work!
-                <br><br>
-
-                <div id="links-container">
-                  <span class="github">
-                    <a class="link" href="resume.pdf">
-                      <i class="fa fa-lg fa-file-text"></i>
-                    </a>
-                  </span>
-                  <span class="github">
-                    <a class="link" href="https://github.com/kumaraditya1999">
-                      <i class="fa fa-lg fa-github"></i>
-                    </a>
-                  </span>
-                  <span class="facebook">
-                    <a class="link" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kumaraditya1999@gmail.com">
-                      <i class="fa fa-lg fa-envelope"></i>
-                    </a>
-                  </span>
-                  <span class="facebook">
-                    <a class="link" href="https://www.facebook.com/profile.php?id=100002199165152">
-                      <i class="fa fa-lg fa-facebook"></i>
-                    </a>
-                  </span>
-                </div>
-                <br>
+    <div id="particles-js">
+        <div class="header">
+            <h1>
+              <strong><span class="site-title">Aditya Kumar</span></strong>
+              <span class="site-description">Algorithmist & Software Engineer</span>
+            </h1>
+            <div class="header-icons">
+              <a aria-label="Send email" href="mailto:kumaraditya1999@gmail.com"><i class="icon fa fa-envelope"></i></a>
+              <a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/_aditya_._kumar_/"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>
+              <a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/profile.php?id=100002199165152"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
+              <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/aditya-kumar-8218ab138"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+              <a aria-label="My Github" target="_blank" href="https://github.com/kumaraditya1999"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+            </div>
+            <div class="header-links">
+              <a class="link" href="#about" data-scroll> About Me  </a>
+              <a class="link" href="#skill" data-scroll> Skill  </a>
+              <a class="link" href="#project" data-scroll> Project  </a>
+              <a class="link" href="#blog" data-scroll> Blog  </a>
             </div>
         </div>
+
+        <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
+      
+
+    <!-- about section begin -->
+
+    <section id="about" style="height: 100vh">
+        <div class="user-details">
+            <h1 class="section-h"><strong> Who am I ?</strong></h1>
+            <p class="quote-text">
+                "We ask ourselves, 'Who am I to be brilliant, gorgeous, talented, fabulous?' Actually, who are you not to be?"
+                <strong class="quote-author">-Marianne Williamson</strong>
+                <hr><br>
+            </p>
+
+            <p class="section-p">
+                My name is <strong class="p-bold">Aditya.</strong><br>
+                I am currently in my third year at <strong><a class="link small-link highlight" style="text-decoration: none; color: rgb(47, 47, 47)" href="http://nitt.edu" target="_blank">NIT Trichy</a></strong>,<br>
+                one of India's top universities. I love participating in <br>
+                competitive coding contest <br>
+                and building stuff for people. <br>
+                In my free time I like to sketch, play tennis or write blogs.
+                <br><br>
+                Have a look at my <strong><a class="link small-link highlight" style="text-decoration: none;color: rgb(47, 47, 47)" href="./assets/docs/resume.pdf" target="_blank">Resumé </a></strong>
+            </p>
+            
+            <br>
+
+        </div>
+
+        <a class="link" href="#skill" data-scroll><i class="icon fa fa-chevron-down custom-arrow" style="text-align: center"aria-hidden="true"></i></a>
+
+    </section>
+
+    <!-- about section end -->
+
+<br>
+<br>
+
+    <!-- skill section begin -->
+
+    <section id="skill">
+        <div class="user-details">
+            <h1 class="section-h"><strong> What I Possess ?</strong></h1>
+            <p class="quote-text">
+                "The true sign of intelligence is not knowledge but imagination."
+                <strong class="quote-author">-Albert Einstein</strong>
+                <hr>
+            </p>
+        </div>
+
+        <div class="user">
+            <div class="custom">
+                <h2>Languages</h2>
+                <img src="./assets/images/icons/icons8-color-96.png">
+                <img src="./assets/images/icons/icons8-javascript.svg">
+                <img src="./assets/images/icons/icons8-python.svg">
+                <img src="./assets/images/icons/icons8-ruby-programming-language.svg">
+                <p class="sub-section-p">My main development languages are C++, JavaScript and Python but I have worked with Typescript, PHP, Ruby and more..</p>
+            </div>
+            <div class="custom">
+                <h2>Development</h2>
+                <img src="./assets/images/icons/icons8-html-5.svg">
+                <img src="./assets/images/icons/icons8-css3.svg">
+                <img src="./assets/images/icons/icons8-angularjs.svg">                
+                <img src="./assets/images/icons/icons8-nodejs.svg">
+                <p class="sub-section-p">I feel comfortable working on both the front-end as well as back-end, going from pure CSS, HTML5, Jquery, Angular to Nodejs, MongoDb, MySQL and whatever..!</p>
+            </div>
+            <div class="custom">
+                <h2>Tools</h2>
+                <img src="./assets/images/icons/icons8-npm.svg">
+                <img src="./assets/images/icons/icons8-debian-96.png">
+                <img src="./assets/images/icons/icons8-git.svg">
+                <img src="./assets/images/icons/icons8-sublime-text.svg">
+                <p class="sub-section-p">Git, NPM, Linux, Rollup, you name it, I have used a bajillion tools!</p>
+            </div>
+        </div>
+        <a class="link" href="#project" data-scroll><i class="icon fa fa-chevron-down custom-arrow" style="text-align: center"aria-hidden="true"></i></a>
+    </section>
+
+    <!-- skill section end -->
 
 
+    <!-- experience section begin -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <section id="project">
+        <div class="user-details">
+            <h1 class="section-h"><strong> What have I done ?</strong></h1>
+            <p class="quote-text">
+                "If you always put limit on everything you do, physical or anything else. It will spread into your work and into your life. There are no limits. There are only plateaus, and you must not stay there, you must go beyond them."
+                <strong class="quote-author">-Bruce Lee</strong>
+                <hr>
+            </p>
+        </div>
+        <div class="project">
+
+            <div class="sub-project">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="./assets/images/project/manga-downloader.png" />
+                    <div class="overlay">
+                        <h2><strong>Manga downloader</strong></h2>
+                        <a class="info" href="https://github.com/kumaraditya1999/Manga-Downloader" target="_blank">A webscrapper made in python to download manga from websites and make net chapter wise folders and store in the form of pdf</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-project">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="./assets/images/project/genius.png" />
+                    <div class="overlay">
+                        <h2><strong>Genius Chrome Extention</strong></h2>
+                        <a class="info" href="https://github.com/kumaraditya1999/Genius" target="_blank">A chrome extention that tells the meaning of selected word. Also gives pronunciation and supports multiple languages other than english</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- project section end -->
 
 
+    <!-- footer begin -->
+    <footer class="footer">
+        <!-- <p>&copy; Aditya Kumar </p> -->
+        <p>Made with <a href="https://icons8.com" target="_blank">icons8</a> and <span class="love">❤</span> by <a href="https://github.com/kumaraditya1999"><strong>Aditya Kumar</strong></a></p>
+    </footer>
+    <!-- footer end -->
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./assets/js/sweet-scroll.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 
-</body>
+  </body>
 </html>
