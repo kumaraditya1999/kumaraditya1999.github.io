@@ -11,36 +11,85 @@ html, body {
     justify-content: center;
     position: relative;
     text-align: center;
-    color: white;
+    color: #EEEEEE;
     background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
 }
 
 .header h1 {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
+    font-size: 7rem;
+    margin-bottom: 2rem;
 }
 
 .header .site-description {
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: block;
 }
 
-.header-icons a {
-    color: white;
-    margin: 0 0.5rem;
-    font-size: 1.5rem;
+.header-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-.header-links a {
-    color: white;
-    margin: 0 0.5rem;
+.header-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: #EEEEEE;
+    font-size: 2rem;
+    border: 2px solid #EEEEEE; /* Add border */
+    transition: all 0.3s ease;
+}
+
+.header-icons a:hover {
+    background-color: #EEEEEE;
+    color: black;
     text-decoration: none;
 }
 
+.header-icons a:hover {
+    background-color: #EEEEEE;
+    color: black;
+}
+
+.header-links a {
+    color: #EEEEEE;
+    margin: 3rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
 .header-links a:hover {
-    text-decoration: underline;
+    color: #C73659;
+    transition: all 0.3s ease;
 }
 
 section {
     padding: 2rem;
+}
+
+.dark-red {
+    color: #A91D3A;
+}
+
+.light-red {
+    color: #C73659;
+}
+
+.custom-grey {
+    color: #EEEEEE;
+}
+
+/* Media query for small screens */
+@media (max-width: 576px) {
+    .header-links a {
+        margin: 1; /* Remove margin on small screens */
+    }
 }
