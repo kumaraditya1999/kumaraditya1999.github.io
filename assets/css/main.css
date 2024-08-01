@@ -93,3 +93,20 @@ section {
         margin: 1; /* Remove margin on small screens */
     }
 }
+
+@keyframes upDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.header {
+    animation: upDown 3s infinite ease-in-out;
+}
+
+.dark-red {
+    animation: upDown 5s infinite ease-in-out;
+}
